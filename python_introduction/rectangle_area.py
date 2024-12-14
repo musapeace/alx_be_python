@@ -5,6 +5,6 @@ length = 10
 width = 5
 
 # formular for calculating area of rectangle
-area = length*width
+area = length * width
 
 print(area)
