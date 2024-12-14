@@ -5,6 +5,6 @@ length = 10
 width = 5
 
 # formular for calculating area of rectangle
-Area = length*width
+area = length*width
 
-print(Area)
+print(area)
