@@ -10,6 +10,7 @@ def convert_to_fahrenheit(celsius):
   return fahrenheit
 
 def main():
+  """Prompting the user for temperature input and performs conversion."""
   while True:
     try:
       temperature = float(input("Enter the temperature to convert: "))
