@@ -24,7 +24,7 @@ while True:
       print("Insufficient funds.")
 
   elif choice == '3':
-    my_account.display_balance()
+    my_account.account_balance()
 
   elif choice == '4':
     print("Goodbye!")
