@@ -1,6 +1,6 @@
 from bank_account import BankAccount
 
-my_account = BankAccount(250)  # Starting with $100
+account = BankAccount(250)
 
 while True:
   print("\nChoose an option:")
@@ -13,18 +13,18 @@ while True:
 
   if choice == '1':
     amount = float(input("Enter deposit amount: "))
-    my_account.deposit(amount)
+    account.deposit(amount)
     print(f"Deposited: ${amount}")
 
   elif choice == '2':
     amount = float(input("Enter withdrawal amount: "))
-    if my_account.withdraw(amount):
+    if account.withdraw(amount):
       print(f"Withdraw: ${amount}")
     else:
       print("Insufficient funds.")
 
   elif choice == '3':
-    my_account.account_balance()
+    account.account_balance()
 
   elif choice == '4':
     print("Goodbye!")
