@@ -17,7 +17,7 @@ class TestSimpleCalculator(unittest.TestCase):
 
     def test_division(self):
         calc = SimpleCalculator()
-        self.assertEqual(calc.divide(10, 2), 5.0) 
+        self.assertEqual(self.calc.divide(10, 2), 5.0) 
         self.assertIsNone(self.calc.divide(7, 0)) 
 
 if __name__ == '__main__':
