@@ -5,7 +5,7 @@ class Book:
         self.author = author
     
     def __repr__(self):
-        return f"Book({self.title}, {self.author})"
+        return f"Book{self.title}, {self.author}"
 
     def __str__(self):
         return f"{self.title} by {self.author}"
@@ -14,25 +14,25 @@ class Book:
 class EBook(Book):
     def __init__(self, title, author, file_size):
         super().__init__(title, author)
-        self.file_size = int(file_size)
+        self.file_size = file_size
 
     def __repr__(self):
         return f"EBook{self.title}, {self.author}, File Size {self.file_size}KB"
 
     def __str__(self):
-        return f"{self.title} by {self.author} - File Size {self.file_size}KB"
+        return f"{self.title} by {self.author} File Size {self.file_size}KB"
 
 # PrintBook class also inherited from base class Book 
 class PrintBook(Book):
     def __init__(self, title, author, page_count):
         super().__init__(title, author)
-        self.page_count = int(page_count)
+        self.page_count = page_count
 
     def __repr__(self):
         return f"PrintBook{self.title}, {self.author}, Page Count: {self.page_count}"
 
     def __str__(self):
-        return f"{self.title} by {self.author} - Page Count: {self.page_count}"
+        return f"{self.title} by {self.author}  Page Count: {self.page_count}"
 
 
 # class that shows the list of books in the library 
