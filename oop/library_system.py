@@ -17,10 +17,10 @@ class EBook(Book):
         self.file_size = int(file_size)
 
     def __repr__(self):
-        return f"EBook({self.title}, {self.author}, {self.file_size}KB)"
+        return f"EBook({self.title}, {self.author}, File Size {self.file_size}KB)"
 
     def __str__(self):
-        return f"{self.title} by {self.author} - {self.file_size}KB"
+        return f"{self.title} by {self.author} - File Size {self.file_size}KB"
 
 # PrintBook class also inherited from base class Book 
 class PrintBook(Book):
@@ -52,8 +52,8 @@ class Library:
     def list_books(self):
         for book in self.books:
             if isinstance(book, EBook):
-                print(f"EBook: {book.title} by {book.author}, {book.file_size}KB")
+                print(f"EBook: {book.title} by {book.author}, File Size: {book.file_size}KB")
             elif isinstance(book, PrintBook):
-                print(f"PrintBook: {book.title} by {book.author}, {book.page_count} pages")
+                print(f"PrintBook: {book.title} by {book.author}, Page Count: {book.page_count} pages")
             else:
                 print(f"Book: {book.title} by {book.author}")              
