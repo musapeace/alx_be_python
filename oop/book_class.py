@@ -14,5 +14,9 @@ class Book:
     
 
     def __del__ (self):
+<<<<<<< HEAD
        print(f"Book '{self.title}' is being deleted.")
+=======
+       return f"{self.title} by {self.author}, published in {self.year}"
+>>>>>>> 066839e2f988db14f239fb2feba74cb38b20b0ed
             
