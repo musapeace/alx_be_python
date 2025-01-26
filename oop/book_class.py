@@ -15,4 +15,3 @@ class Book:
 
     def __del__ (self):
        print(f"Book '{self.title}' is being deleted.")
-            
