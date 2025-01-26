@@ -4,7 +4,6 @@ class Book:
         self.author = author
         self.year = year
 
-
     def __repr__(self):
       return  f"Book('{self.title}', '{self.author}', {self.year})"
 
@@ -13,5 +12,5 @@ class Book:
        return f"('{self.title}', by {self.author}, pblished in {self.year} )"
     
 
-    def __del__ (self):
+    def __del__(self):
        print(f"Book '{self.title}' is being deleted.")
