@@ -32,7 +32,7 @@ class PrintBook(Book):
         return f"PrintBook{self.title}, {self.author}, Page Count: {self.page_count}"
 
     def __str__(self):
-        return f"{self.title} by {self.author}  Page Count: {self.page_count}"
+        return f"{self.title} by {self.author} Page Count: {self.page_count}"
 
 
 # class that shows the list of books in the library 
@@ -54,6 +54,6 @@ class Library:
             if isinstance(book, EBook):
                 print(f"EBook: {book.title} by {book.author}, File Size: {book.file_size}KB")
             elif isinstance(book, PrintBook):
-                print(f"PrintBook: {book.title} by {book.author}, Page Count: {book.page_count} pages")
+                print(f"PrintBook: {book.title} by {book.author}, Page Count: {book.page_count}")
             else:
                 print(f"Book: {book.title} by {book.author}")              
